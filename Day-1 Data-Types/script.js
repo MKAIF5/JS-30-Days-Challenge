@@ -25,6 +25,15 @@
 // "" => boolean && number = false 
 // " " => boolean && number = true 
 
-let loggedIn = "";
-const boolCheck = Boolean(loggedIn);
-console.log(boolCheck);
+// let loggedIn = "";
+// const boolCheck = Boolean(loggedIn);
+// console.log(boolCheck);
+
+
+// let value  = 5
+// let negValue = -value
+// console.log(negValue);
+
+// console.log(10**9)
+
+console.log((3 + 4) * (7 - 1));
