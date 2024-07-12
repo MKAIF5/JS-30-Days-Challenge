@@ -16,11 +16,15 @@
 // console.log(typeof updatedNumber);
 
 //Data Types Conversion
+
 // 33 => "33" =  string
 // "33" => 33 = number
 // 33 => "33abc" = NAN
-// 1 => number = true
+// 1 => boolean && number = true
+// 0 => boolean && number = false
+// "" => boolean && number = false 
+// " " => boolean && number = true 
 
-// let loggedIn = undefined;
-// const boolCheck = Boolean(loggedIn);
-// console.log(boolCheck);
+let loggedIn = "";
+const boolCheck = Boolean(loggedIn);
+console.log(boolCheck);
