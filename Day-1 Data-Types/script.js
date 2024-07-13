@@ -36,4 +36,26 @@
 
 // console.log(10**9)
 
-console.log((3 + 4) * (7 - 1));
+// console.log((3 + 4) * (7 - 1));
+
+// Challenge Start
+
+// Activity 1 : Variable Declaration
+
+// Task 1 : Declare a variable  using var , assign it a number and log the value to the console
+var num = 15;
+console.log(num);
+
+// Task2 :  Declare a variable  using let , assign it a string and log the value to the console
+let str = "kaif";
+console.log(str);
+
+// Activity 2 : Constant Declaration
+
+// Task3 :  Declare a variable  using const , assign it a boolean value and log the value to the console
+const bool = true;
+console.log(bool);
+
+// Activity 3 : Data Types
+
+// Task3 :  Declare a variable  using const , assign it a boolean value and log the value to the console
