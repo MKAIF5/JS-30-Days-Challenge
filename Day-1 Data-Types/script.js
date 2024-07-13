@@ -42,20 +42,42 @@
 
 // Activity 1 : Variable Declaration
 
-// Task 1 : Declare a variable  using var , assign it a number and log the value to the console
+// Task 1 : Declare a variable  using var , assign it a number and log the value to the
+// console ?
 var num = 15;
 console.log(num);
 
-// Task2 :  Declare a variable  using let , assign it a string and log the value to the console
+// Task2 :  Declare a variable  using let , assign it a string and log the value
+//  to the console ?
 let str = "kaif";
 console.log(str);
 
 // Activity 2 : Constant Declaration
 
-// Task3 :  Declare a variable  using const , assign it a boolean value and log the value to the console
+// Task3 :  Declare a variable  using const , assign it a boolean value 
+// and log the value to the console ?
 const bool = true;
 console.log(bool);
 
 // Activity 3 : Data Types
 
-// Task3 :  Declare a variable  using const , assign it a boolean value and log the value to the console
+// Task4 : Create Variable of different types (number , string , boolean , object , array)
+// and log each variables type using the typeof operators
+const number = 5;
+const string = 'practice';
+const boolean = false;
+const arr = ["data types", 33, true];
+const obj = {
+    userName: "kaif",
+    age: 14,
+    location: "karachi",
+    logedIn: true
+}
+console.log(typeof(number));  
+console.log(typeof(string));  
+console.log(typeof(boolean));  
+console.log(typeof(arr));  
+console.log(typeof(obj));  
+
+// Activity 4 : Reassigning Value
+
