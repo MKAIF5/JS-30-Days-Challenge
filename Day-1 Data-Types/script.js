@@ -81,3 +81,18 @@ console.log(typeof(obj));
 
 // Activity 4 : Reassigning Value
 
+// Task 5 : Declare a variable using let , assign it initial value , reassign a new value,
+//and log both values to the console
+let reassign = 15;
+console.log(reassign);
+reassign =  "kaif"
+console.log(reassign);
+
+// Activity 5 : UnderStanding Const
+
+//Task 6 : Try reassigning variable to declare const and observer the error
+const err = "error";
+err = "errors"
+console.log(err);
+
+//Tasks Completed
