@@ -98,3 +98,11 @@ if (price != 199) {
 else {
     console.log("not correct");
 }
+
+// Activity 5 : Ternary Oprator
+
+// Task 14 : Write a program that use ternary operator to check if a number 
+// is postive or negative and log the result to the console
+let courseInRoll = prompt("enter your number");
+let result = courseInRoll > 18 ? "Inroll" : "Not Inroll";
+console.log(result);
