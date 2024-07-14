@@ -66,3 +66,35 @@ console.log(7 <= 5);
 // Task 10 : Write a program to compare == and === and log the result to the console
 console.log(2 == "2");
 console.log(3 === 5);
+
+// Activty 4 : Logical Operator
+
+// Task 11 : Write a program to uses the && operator to combine two condition and
+// log the result to the console
+let userName  = "kaif";
+let locations  = "karachi";
+if(userName === "kaif" && locations === "karachi"){
+    console.log("correct");
+}
+else{
+    console.log("not correct");
+}
+// Task 12 :  Write a program to uses the || operator to combine two condition and
+// log the result to the console
+let age   = 15;
+let loggedIn  = true;
+if(age === 15 || loggedIn === false){
+    console.log("correct");
+}
+else{
+    console.log("not correct");
+}
+// Task 13 : Write a program to uses the != operator to combine two condition and
+// log the result to the console
+let price  = 199;
+if(price != 199){
+    console.log("correct");
+}
+else{
+    console.log("not correct");
+}
