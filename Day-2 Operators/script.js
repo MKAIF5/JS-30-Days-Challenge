@@ -14,3 +14,32 @@
 // let a = 5;
 // a++ + --a
 // console.log(a); 
+
+//Assaigment Operators
+
+// = , =+ , *= , **= , -= , %=
+
+// let a = 5;
+// a -= 2 * 2
+// console.log(a);
+
+// Comparison Operators
+
+// == , === , != , !==
+
+// let a = 5;
+// let b = 5;
+// console.log(a === b);
+
+// Challenge Started : Operators
+
+// Activity 1 : Arthmetic Operators
+
+// Task 1 : // Write a program to add two number and log the result to the console
+console.log(3 + 3);
+// Task 2 :  Write a program to subtract two number and log the result to the console
+console.log(5 - 3);
+// Task 3 :  Write a program to multiply two number and log the result to the console
+console.log(5 *10);
+// Task 4 :  Write a program to divide two number and log the result to the console
+console.log(10 / 5);
