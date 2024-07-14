@@ -54,3 +54,15 @@ console.log(add);
 let sub = 5;
 sub -= 4;
 console.log(sub);
+
+// Activity 3 : Comporison Operator
+
+// Task 8 : Write a program to compare > and < and log the result to the console
+console.log(3 > 1);
+console.log(30 < 20);
+// Task 9 : Write a program to compare >= and <= and log the result to the console
+console.log(3 >= 3);
+console.log(7 <= 5);
+// Task 10 : Write a program to compare == and === and log the result to the console
+console.log(2 == "2");
+console.log(3 === 5);
