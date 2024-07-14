@@ -106,3 +106,5 @@ else {
 let courseInRoll = prompt("enter your number");
 let result = courseInRoll > 18 ? "Inroll" : "Not Inroll";
 console.log(result);
+
+// Challenege Completed
