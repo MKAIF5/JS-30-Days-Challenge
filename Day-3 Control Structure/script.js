@@ -62,29 +62,29 @@ switch (month) {
     case 7:
         console.log("jul");
         break;
-        default: 
+    default:
         console.log("is month not exist in present year");
 }
 // // Task 5 : write a program to uses switch case to assign a grade (A , B , C , D , F)
 // //based on a score and log the grade to the console
 let grade = +prompt("enter your number");
-switch (grade) {
-    case 80:
+switch (true) {
+    case (grade >= 80):
         console.log("your grade is A+");
         break;
-    case 70:
+    case (grade >= 70):
         console.log("your grade is A");
         break;
-    case 60:
+    case (grade > + 60):
         console.log("your grade is B");
         break;
-    case 50:
+    case (grade >= 50):
         console.log("your grade is C");
         break;
-    case 40:
+    case (grade >= 40):
         console.log("your grade is D");
         break;
-    case 39:
+    case (grade <= 39):
         console.log("beta pharai likhai pe dihan do");
         break;
 }
