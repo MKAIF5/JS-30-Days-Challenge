@@ -94,7 +94,7 @@ switch (true) {
 // Task 6 : Write a program that uses the ternary operator to check if a number
 // is even or odd and log the result to the console
 let numEvenOdd = prompt("Enter your number");
-let result  = `${numEvenOdd} is ${numEvenOdd % 2 === 0 ? "even" : "odd"}`
+let result = `${numEvenOdd} is ${numEvenOdd % 2 === 0 ? "even" : "odd"}`
 console.log(result);
 
 // Activity 5 : Combining Conditions
@@ -106,17 +106,17 @@ console.log(result);
 const year = +prompt("Enter your year");
 
 if (year % 4 === 0) {
-  if (year % 100 === 0) {
-    if (year % 400 === 0) {
-      console.log(`${year} is leap year`);
+    if (year % 100 === 0) {
+        if (year % 400 === 0) {
+            console.log(`${year} is leap year`);
+        } else {
+            console.log(`${year} is not leap year`);
+        }
     } else {
-      console.log(`${year} is not leap year`);
+        console.log(`${year} is leap year`);
     }
-  } else {
-    console.log(`${year} is leap year`);
-  }
 } else {
-  console.log(`${year} is not leap year`);
+    console.log(`${year} is not leap year`);
 }
 
 // Tasks Completed
