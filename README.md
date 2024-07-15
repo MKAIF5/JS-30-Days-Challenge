@@ -5,3 +5,6 @@ COMPLETED ✔
 
 Day 2 : Operators
 COMPLETED ✔
+
+Day : 3 Control Structures 
+COMPLETED ✔
