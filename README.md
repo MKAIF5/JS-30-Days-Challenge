@@ -1,4 +1,4 @@
-"<h1>" Js 30 Days Challenge "</h1>"
+<h1> Js 30 Days Challenge </h1>
 Day 1 : Data Types
 COMPLETED ✔
 
