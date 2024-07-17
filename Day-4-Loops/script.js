@@ -4,10 +4,28 @@
 
 // Task 1 : Write a program to print numbers from 1 to 10 using a for loop
 for (let i = 1; i <= 10; i++) {
-//   console.log(i);
+    console.log(i);
 }
 
 // Task 2 : Write a program to print the multiplication table of 5 using a for loop
-for (let i = 5; i <= 50; i = i + 5){
-    // console.log(i);
+for (let i = 5; i <= 50; i = i + 5) {
+    console.log(i);
+}
+
+// Activity 2 : While Loop
+
+// Task 3 : Write a program to calculate sum of numbers from 1 to 10 using a while loop
+let i = 1;
+let sum = 1;
+while (i <= 10) {
+    console.log(sum);
+    sum = sum + i
+    i++;
+}
+
+//Task 4 :  Write a program to print numbers from 1 to 10 using a while loop
+let j = 1;
+while (j <= 10) {
+    console.log(j);
+    j++
 }
