@@ -36,7 +36,7 @@ while (j <= 10) {
 
 let k = 1;
 do {
-    console.log(k);
+    // console.log(k);
     k++
 } while (k <= 5)
 
@@ -47,4 +47,16 @@ do {
     mul *= a
     a++;
 } while (a <= 5)
-console.log(mul);
+// console.log(mul);
+
+// Activity 4 : Nested Loops
+
+// Task 7 : write a program to print a pattern using a nested for loops
+
+for (let i = 1; i <= 5; i++) {
+    let pattern = "";
+    for (let j = 1; j <= 5; j++) {
+        pattern += "*"
+    }
+    console.log(pattern);
+}
