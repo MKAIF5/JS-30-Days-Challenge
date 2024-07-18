@@ -7,3 +7,6 @@ COMPLETED ✔
 
 Day : 3 Control Structures
 COMPLETED ✔
+
+Day : 4 Loops
+COMPLETED ✔
