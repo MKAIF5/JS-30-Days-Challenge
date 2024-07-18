@@ -4,12 +4,12 @@
 
 // Task 1 : Write a program to print numbers from 1 to 10 using a for loop
 for (let i = 1; i <= 10; i++) {
-    // console.log(i);
+    console.log(i);
 }
 
 // Task 2 : Write a program to print the multiplication table of 5 using a for loop
 for (let i = 5; i <= 50; i = i + 5) {
-    // console.log(i);
+    console.log(i);
 }
 
 // Activity 2 : While Loop
@@ -18,7 +18,7 @@ for (let i = 5; i <= 50; i = i + 5) {
 let i = 1;
 let sum = 1;
 while (i <= 10) {
-    // console.log(sum);
+    console.log(sum);
     sum = sum + i
     i++;
 }
@@ -26,7 +26,7 @@ while (i <= 10) {
 // Task 4 :  Write a program to print numbers from 1 to 10 using a while loop
 let j = 1;
 while (j <= 10) {
-    // console.log(j);
+    console.log(j);
     j++
 }
 
@@ -36,7 +36,7 @@ while (j <= 10) {
 
 let k = 1;
 do {
-    // console.log(k);
+    console.log(k);
     k++
 } while (k <= 5)
 
@@ -47,7 +47,7 @@ do {
     mul *= a
     a++;
 } while (a <= 5)
-// console.log(mul);
+console.log(mul);
 
 // Activity 4 : Nested Loops
 
@@ -57,25 +57,27 @@ for (let i = 1; i <= 5; i++) {
     for (let j = 1; j <= 5; j++) {
         pattern += "*"
     }
-    // console.log(pattern);
+    console.log(pattern);
 }
 
 // Activity 5 : Loop Control Statement
 
 // Task 8 : Write a program to print numbers from 1 to 10 but skip the 
 // 5 using a continue statement
-for(let i = 1; i <= 10; i++){
-    if(i == 5){
+for (let i = 1; i <= 10; i++) {
+    if (i == 5) {
         continue;
     }
-    // console.log("5 is skipped");
+    console.log("5 is skipped");
 }
 
 // Task 9 : Write a program to print numbers from 1 to 10 but stop the loop when 
 // the number is 7 using the break statement 
-for(let i = 1; i <= 10; i++){
-    if(i == 7){
+for (let i = 1; i <= 10; i++) {
+    if (i == 7) {
         break;
     }
     console.log("loop stoped");
 }
+
+// Tasks Completed
