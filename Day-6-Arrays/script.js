@@ -27,9 +27,29 @@
 // console.log(Array.isArray("kaif"));
 // console.log(Array.from("kaif"));
 
-const arr = [1,2,3,4,5];
-for(const num of arr){
-    console.log(num);
+// for of loop
+
+// const arr = [1,2,3,4,5];
+// for(const num of arr){
+//     console.log(num);
+// }
+
+// const greetings = "Hello Guests";
+
+// for (const greet of greetings) {
+//     console.log(greet);
+// }
+
+// Map
+
+const map = new Map();
+map.set("pak",  "pakistan");
+map.set("chi" , "china");
+map.set("tur" , "turkey");
+// console.log(map);
+
+for (const [key , value] of map) {
+    console.log(key , value);
 }
 
 // Challenge Started
@@ -50,18 +70,22 @@ const arrAccess = ["array", 15, true, undefined];
 // log the updated array
 let pushArr = ["push" , "pop" , "unshift"];
 pushArr.push("shift");
+// console.log(pushArr);
 
 // Task 4 : Use the (pop) method to remove the last element from the array and log
 // the updated array
 let popArr = ["push" , "pop" , "unshift" , "shift" , "sdhufh"];
 popArr.pop();
+// console.log(popArr);
 
 // Task 5 :  Use the (shift) method to remove the first element from the array and log
 // the updated array
 let shiftArr = ["shdjfdf" , "push" , "pop" , "unshift" , "shift" ];
 shiftArr.shift();
+// console.log(shiftArr);
 
 // Task 6 :  Use the (unshift) method to add a new number to the beginning of the
 // array and log the updated array
 let unshiftArr = ["pop" , "unshift" , "shift" ,];
 unshiftArr.unshift("push");
+// console.log(unshiftArr);
