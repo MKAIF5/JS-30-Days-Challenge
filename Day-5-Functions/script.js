@@ -55,7 +55,7 @@ checkNumber()
 function square(x) {
     return x * x
 }
-console.log(square(5));
+// console.log(square(5));
 
 // Activity 2 : Function Expression
 
@@ -67,10 +67,29 @@ function max(num1, num2) {
 }
 const num1 = 5;
 const num2 = 10;
-max(num1 , num2)
+max(num1, num2)
 
 // Task 4 : Write a function to concatenate two string and return the result
-function concatenate(str1 , str2){
+function concatenate(str1, str2) {
     return str1 + str2
 }
-console.log(concatenate("mohammad" , "kaif"));
+// console.log(concatenate("mohammad" , "kaif"));
+
+// Activity 3 : Arrow Function
+
+// Task 5 : Write an arrow function to calculate the sum of two numbers and return 
+// the result
+const sum = (sum1, sum2) => {
+    return sum1 + sum2
+}
+console.log(sum(5, 5));
+
+// Task 6 : Write an arrow function to check if a string contains a specific
+// character and return a boolean value
+const strSpecific = (str1, str2) => {
+    if (str1.includes(str2)) {
+        return true
+    }
+    return false
+}
+console.log(strSpecific("specific", "web and app develpment"));
