@@ -34,6 +34,13 @@
 // }
 // getObj(myObj)
 
+// function add(a , b , cb){
+//   let result =  a + b
+//   cb(result)
+// }
+// add(3 , 5 , function (value){
+//     console.log(value);
+// })
 
 // Challenge Started
 
@@ -98,14 +105,50 @@ console.log(strSpecific("specific", "web and app develpment"));
 
 // Task 7 : Write a function that takes two parameters and return thier product.
 // provide a default value for the second parameter
-function product(msg1 , msg2 = "kaif") {
+function product(msg1, msg2 = "kaif") {
     return msg1 + msg2
 }
-console.log(product("kashif" , ""));
+console.log(product("kashif", ""));
 
 // Taks 8 : Write a function that takes a preson name and age and return a greeting
 // message.provide a default value for the age
-function person(name , age = 15){
-   return name + age
+function person(name, age = 15) {
+    return name + age
 }
 console.log(person("welcome "));
+
+// Activity 5 : High Order Function
+
+// Task 9 : Write a higher-order function that takes a function and number ,
+// and calls the function many times
+function add(add1, add2, callBack) {
+    let answer = add1 + add2
+    callBack(answer)
+    callBack(answer)
+    callBack(answer)
+    callBack(answer)
+    callBack(answer)
+}
+add(5, 5, (val) => console.log(val));
+
+// Task 10 : Write a higher-order function that takes two function and value , 
+// applies the first function to the value , and then applies the second function
+// to the result
+function highOrder(val1 , val2 , cb){
+    let result = val1(cb);
+    let result2 = val2(result);
+    console.log(result2);
+}
+
+function val1(v1){
+  return v1 - 3
+}
+
+function val2(v2){
+    return v2 - 4
+}
+
+const cb = 10;
+highOrder(val1 , val2 , cb)
+
+// Tasks Completed
