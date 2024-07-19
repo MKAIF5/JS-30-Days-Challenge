@@ -93,3 +93,19 @@ const strSpecific = (str1, str2) => {
     return false
 }
 console.log(strSpecific("specific", "web and app develpment"));
+
+// Activity 4 : Function Parameters and Default Value
+
+// Task 7 : Write a function that takes two parameters and return thier product.
+// provide a default value for the second parameter
+function product(msg1 , msg2 = "kaif") {
+    return msg1 + msg2
+}
+console.log(product("kashif" , ""));
+
+// Taks 8 : Write a function that takes a preson name and age and return a greeting
+// message.provide a default value for the age
+function person(name , age = 15){
+   return name + age
+}
+console.log(person("welcome "));
