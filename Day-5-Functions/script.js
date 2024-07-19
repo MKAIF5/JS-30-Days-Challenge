@@ -50,10 +50,10 @@
 // to the console
 function checkNumber(num) {
     if (num % 2 === 0) {
-        // console.log("even");
+        console.log("even");
     }
     else {
-        // console.log("odd");
+        console.log("odd");
     }
 }
 checkNumber()
@@ -62,7 +62,7 @@ checkNumber()
 function square(x) {
     return x * x
 }
-// console.log(square(5));
+console.log(square(5));
 
 // Activity 2 : Function Expression
 
