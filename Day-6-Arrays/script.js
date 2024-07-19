@@ -42,15 +42,17 @@
 
 // Map
 
-const map = new Map();
-map.set("pak",  "pakistan");
-map.set("chi" , "china");
-map.set("tur" , "turkey");
+// const map = new Map();
+// map.set("pak",  "pakistan");
+// map.set("chi" , "china");
+// map.set("tur" , "turkey");
 // console.log(map);
 
-for (const [key , value] of map) {
-    console.log(key , value);
-}
+// for (const [key , value] of map) {
+//     console.log(key , value);
+// }
+
+// For Each
 
 // Challenge Started
 
