@@ -10,3 +10,6 @@ COMPLETED ✔
 
 Day : 4 Loops
 COMPLETED ✔
+
+Day : 5 Functions
+COMPLETED ✔
