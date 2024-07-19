@@ -43,3 +43,25 @@ const myArr = [1, 2, 3, 4, 5];
 // Task 2 : Access the first and last elements of the array and log them to the console
 const arrAccess = ["array", 15, true, undefined];
 // console.log(arrAccess[0] , arrAccess[3]);
+
+// Activity 2 : Array Methods (Basics)
+
+// Task 3 : Use the (push) method to add a new number to the end of the array and
+// log the updated array
+let pushArr = ["push" , "pop" , "unshift"];
+pushArr.push("shift");
+
+// Task 4 : Use the (pop) method to remove the last element from the array and log
+// the updated array
+let popArr = ["push" , "pop" , "unshift" , "shift" , "sdhufh"];
+popArr.pop();
+
+// Task 5 :  Use the (shift) method to remove the first element from the array and log
+// the updated array
+let shiftArr = ["shdjfdf" , "push" , "pop" , "unshift" , "shift" ];
+shiftArr.shift();
+
+// Task 6 :  Use the (unshift) method to add a new number to the beginning of the
+// array and log the updated array
+let unshiftArr = ["pop" , "unshift" , "shift" ,];
+unshiftArr.unshift("push");
