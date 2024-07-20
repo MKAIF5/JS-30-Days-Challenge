@@ -5,11 +5,14 @@ COMPLETED ✔
 Day 2 : Operators
 COMPLETED ✔
 
-Day : 3 Control Structures
+Day 3 : Control Structures
 COMPLETED ✔
 
-Day : 4 Loops
+Day 4 : Loops
 COMPLETED ✔
 
-Day : 5 Functions
+Day 5 : Functions
+COMPLETED ✔
+
+Day 6 : Arrays
 COMPLETED ✔
