@@ -116,7 +116,7 @@ console.log(myArr);
 
 // Task 2 : Access the first and last elements of the array and log them to the console
 const arrAccess = ["array", 15, true, undefined];
-console.log(arrAccess[0] , arrAccess[3]);
+console.log(arrAccess[0], arrAccess[3]);
 
 // Activity 2 : Array Methods (Basics)
 
@@ -188,7 +188,7 @@ let arrGet = eachArray.forEach((arr) => console.log(arr));
 
 // Task 12 : Create a two dimensional array (matrix) and log the entire array to the 
 // console
-let matrixArray = [[1,2,3], [4,5,6], [7,8,9]];
+let matrixArray = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
 console.log(matrixArray);
 
 // Task 13 : Access and log a specific element from the two-udimensional-array
