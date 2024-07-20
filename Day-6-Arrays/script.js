@@ -87,21 +87,24 @@
 // console.log(filNums);
 
 
-const books = [
-    { title: 'Book One', genre: 'Fiction', publish: 1981, edition: 2004 },
-    { title: 'Book Two', genre: 'Non-Fiction', publish: 1992, edition: 2008 },
-    { title: 'Book Three', genre: 'History', publish: 1999, edition: 2007 },
-    { title: 'Book Four', genre: 'Non-Fiction', publish: 1989, edition: 2010 },
-    { title: 'Book Five', genre: 'Science', publish: 2009, edition: 2014 },
-    { title: 'Book Six', genre: 'Fiction', publish: 1987, edition: 2010 },
-    { title: 'Book Seven', genre: 'History', publish: 1986, edition: 1996 },
-    { title: 'Book Eight', genre: 'Science', publish: 2011, edition: 2016 },
-    { title: 'Book Nine', genre: 'Non-Fiction', publish: 1981, edition: 1989 },
-];
+// const books = [
+//     { title: 'Book One', genre: 'Fiction', publish: 1981, edition: 2004 },
+//     { title: 'Book Two', genre: 'Non-Fiction', publish: 1992, edition: 2008 },
+//     { title: 'Book Three', genre: 'History', publish: 1999, edition: 2007 },
+//     { title: 'Book Four', genre: 'Non-Fiction', publish: 1989, edition: 2010 },
+//     { title: 'Book Five', genre: 'Science', publish: 2009, edition: 2014 },
+//     { title: 'Book Six', genre: 'Fiction', publish: 1987, edition: 2010 },
+//     { title: 'Book Seven', genre: 'History', publish: 1986, edition: 1996 },
+//     { title: 'Book Eight', genre: 'Science', publish: 2011, edition: 2016 },
+//     { title: 'Book Nine', genre: 'Non-Fiction', publish: 1981, edition: 1989 },
+// ];
 
-const getarray = books.filter((bk) => bk.genre === "History")
+// const getarray = books.filter((bk) => bk.genre === "History")
 
 // console.log(getarray);
+
+
+
 
 // Challenge Started
 
@@ -109,11 +112,11 @@ const getarray = books.filter((bk) => bk.genre === "History")
 
 // Task 1 : Create an array of numbers from 1 to 5 and log the array to the console
 const myArr = [1, 2, 3, 4, 5];
-// console.log(myArr);
+console.log(myArr);
 
 // Task 2 : Access the first and last elements of the array and log them to the console
 const arrAccess = ["array", 15, true, undefined];
-// console.log(arrAccess[0] , arrAccess[3]);
+console.log(arrAccess[0] , arrAccess[3]);
 
 // Activity 2 : Array Methods (Basics)
 
@@ -121,25 +124,25 @@ const arrAccess = ["array", 15, true, undefined];
 // log the updated array
 let pushArr = ["push", "pop", "unshift"];
 pushArr.push("shift");
-// console.log(pushArr);
+console.log(pushArr);
 
 // Task 4 : Use the (pop) method to remove the last element from the array and log
 // the updated array
 let popArr = ["push", "pop", "unshift", "shift", "sdhufh"];
 popArr.pop();
-// console.log(popArr);
+console.log(popArr);
 
 // Task 5 :  Use the (shift) method to remove the first element from the array and log
 // the updated array
 let shiftArr = ["shdjfdf", "push", "pop", "unshift", "shift"];
 shiftArr.shift();
-// console.log(shiftArr);
+console.log(shiftArr);
 
 // Task 6 :  Use the (unshift) method to add a new number to the beginning of the
 // array and log the updated array
 let unshiftArr = ["pop", "unshift", "shift",];
 unshiftArr.unshift("push");
-// console.log(unshiftArr);
+console.log(unshiftArr);
 
 // Activity 3 : Array Methods (Intermidiate)
 
@@ -149,7 +152,7 @@ let mapArray = [1, 2, 3, 4, 5];
 const mapDouble = mapArray.map((e) => {
     return e * 2
 })
-// console.log(mapDouble);
+console.log(mapDouble);
 
 // Task 8 : Use the filter methods to create a new array with only even numbers
 // and log the new array
@@ -157,12 +160,12 @@ let filterArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 const evenFilter = filterArray.filter((even) => {
     return even % 2 === 0
 })
-// console.log(evenFilter);
+console.log(evenFilter);
 
 // Task 9 : Use the reduce methods to calculate the sum of all numbers in the array
 // and log the result
 const reduceArray = mapArray.reduce((accumlater, currentValue) => {
-    // console.log(accumlater, currentValue)
+    console.log(accumlater, currentValue)
     return accumlater + currentValue;
 }, 0)
 
@@ -179,4 +182,16 @@ for (let i = 0; i < getArray.length; i++) {
 // the console
 let eachArray = [1, 2, 3, 4, 5];
 
-let arrGet = eachArray.forEach((arr) => console.log(arr))  
+let arrGet = eachArray.forEach((arr) => console.log(arr));
+
+// Activity 5 : Multi Dimensional
+
+// Task 12 : Create a two dimensional array (matrix) and log the entire array to the 
+// console
+let matrixArray = [[1,2,3], [4,5,6], [7,8,9]];
+console.log(matrixArray);
+
+// Task 13 : Access and log a specific element from the two-udimensional-array
+console.log(matrixArray[1]);
+
+// Tasks Completed
