@@ -41,18 +41,18 @@ const library = {
         {
             title: "harry porter",
             author: "kisi ne bhi",
-            publish: 2009
+            year: 2009
         },
         {
             title: "48 law power",
             author: "kisi ne bhi",
-            publish: 2000
+            year: 2000
 
         },
         {
             title: "smarter way to lern javascript",
             author: "kisi ne bhi",
-            publish: 2015
+            year: 2015
         }
     ]
 }
@@ -63,3 +63,12 @@ console.log(library);
 library.books.map((e) => {
     console.log(e.title);
 })
+
+// Activity 4 : The (This) Keyword
+
+// Task 7 : Add a method to book object that uses the (this) keyword to return a
+// string with the book's title and year, and log the result of calling this method
+books.kuchbhi = function kuchbhi() {
+    return `${this.title} ${this.year}`
+}
+console.log(books.kuchbhi());
