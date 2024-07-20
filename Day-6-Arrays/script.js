@@ -101,7 +101,7 @@ const books = [
 
 const getarray = books.filter((bk) => bk.genre === "History")
 
-console.log(getarray);
+// console.log(getarray);
 
 // Challenge Started
 
@@ -162,6 +162,21 @@ const evenFilter = filterArray.filter((even) => {
 // Task 9 : Use the reduce methods to calculate the sum of all numbers in the array
 // and log the result
 const reduceArray = mapArray.reduce((accumlater, currentValue) => {
-    console.log(accumlater, currentValue)
+    // console.log(accumlater, currentValue)
     return accumlater + currentValue;
 }, 0)
+
+// Activity 4 : Array iteration
+
+// Task 10 : Use a for loop to iterate over the array and log each element to the
+// console
+let getArray = [1, 2, 3, 4, 5];
+for (let i = 0; i < getArray.length; i++) {
+    console.log(getArray[i]);
+}
+
+// Task 11 : Use the forEach method to iterate over the array and log each element to 
+// the console
+let eachArray = [1, 2, 3, 4, 5];
+
+let arrGet = eachArray.forEach((arr) => console.log(arr))  
