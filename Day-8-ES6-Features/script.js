@@ -50,3 +50,14 @@ function sum(...args) {
     return sum
 }
 console.log(sum(1, 2, 3, 4, 5));
+
+// Activity 4 : Default Parameters
+
+// Task 7 : write a function that takes two parameters and return thier product
+// with the second parameter having a default value of 1 . log the result of 
+// calling this function with and without the second parameter
+function para(par1, par2 = 1) {
+   return par1 + par2
+}
+console.log(para(2));
+console.log(para(2 , 5));
