@@ -61,3 +61,28 @@ function para(par1, par2 = 1) {
 }
 console.log(para(2));
 console.log(para(2 , 5));
+
+// Activity 5 : Enhanced Object Literals
+
+// Task 8 : Use enhanced object literals to create an object with methods and
+// properties , and log the object to the console
+
+let name = "kaif";
+let ages  = 15;
+let color =  "green";
+let loggedIn = true;
+let makeObj = {name , ages , color , loggedIn}
+console.log(makeObj);
+
+// Task 9 : Create an object with computed property names based on variables and 
+// log the object to the console
+let ver = "version";
+
+let user = {
+   computer: "dell",
+   ram: 36,
+   rom: 3543,
+   generation: "8th",
+   ["version"]: 2020
+}
+console.log(user);
