@@ -12,3 +12,22 @@ console.log(`name is ${naMe} , age is ${age}`);
 let multiLine = `Create a multi-line string using templete 
 literals and log it to the console`
 console.log(multiLine);
+
+// Activity 2: Destructuring
+
+// Task 3 : Use array destructuring to extract the first and second element from an
+// array of numbers and log them to the console
+let nums = [1, 32, 53, 4, 5, 24];
+let [first, second] = nums;
+console.log(first, second);
+
+// Task 4 : Use object destructuring to extract the title and author from the book 
+// object and log them to the console
+const books = {
+    title: "text",
+    author: "text",
+    year: "text"
+}
+
+let { title, author } = books
+console.log(title, author);
