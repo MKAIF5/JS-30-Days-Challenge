@@ -19,3 +19,6 @@ COMPLETED ✔
 
 Day 7 : Objects
 COMPLETED ✔
+
+Day 8 : ES6-Features
+COMPLETED ✔
