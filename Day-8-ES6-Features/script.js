@@ -31,3 +31,22 @@ const books = {
 
 let { title, author } = books
 console.log(title, author);
+
+// Activity 3 : Spread and Rest Operators
+
+// Task 5 : Use the spread operator to create a new array that includes all element 
+// of an existing array plus additional elements,and log the new array to the console
+let foodBrands = ["kfc", "mcd", "burgerking"];
+let allFoodsBrands = [...foodBrands, "starbucks", "domino", "pizzahut", "pepsi"];
+console.log(allFoodsBrands);
+
+// Task 6 : Use the rest operators in a function to accept an arbitrary number of arguments 
+// sum them, and return the result
+function sum(...args) {
+    let sum = 0;
+    for (const arg of args) {
+        sum = sum + arg
+    }
+    return sum
+}
+console.log(sum(1, 2, 3, 4, 5));
