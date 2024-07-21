@@ -35,6 +35,22 @@
 // div.appendChild(addTextDiv);
 // document.body.appendChild(div)
 
+// function addlanguage(langname) {
+//     const li = document.createElement("li");
+//     li.innerHTML = langname
+//     document.querySelector(".language").appendChild(li)
+// }
+// addlanguage("python")
+// addlanguage("typescript")
+
+// function addopilang(langname) {
+//     const li = document.createElement("li");
+//     const addText = document.createTextNode(langname);
+//     li.appendChild(addText);
+//     document.querySelector("ul").appendChild(li)
+// }
+// addopilang("ruby")
+
 
 
 // Challenge Started
