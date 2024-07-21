@@ -35,21 +35,34 @@
 // div.appendChild(addTextDiv);
 // document.body.appendChild(div)
 
-// function addlanguage(langname) {
-//     const li = document.createElement("li");
-//     li.innerHTML = langname
-//     document.querySelector(".language").appendChild(li)
-// }
-// addlanguage("python")
-// addlanguage("typescript")
+function addlanguage(langname) {
+    const li = document.createElement("li");
+    li.innerHTML = langname
+    document.querySelector(".language").appendChild(li)
+}
+addlanguage("python")
+addlanguage("typescript")
 
-// function addopilang(langname) {
-//     const li = document.createElement("li");
-//     const addText = document.createTextNode(langname);
-//     li.appendChild(addText);
-//     document.querySelector("ul").appendChild(li)
-// }
-// addopilang("ruby")
+function addopilang(langname) {
+    const li = document.createElement("li");
+    const addText = document.createTextNode(langname);
+    li.appendChild(addText);
+    document.querySelector("ul").appendChild(li)
+}
+addopilang("ruby")
+
+// Edit
+const secondlang = document.querySelector('li:nth-child(4)');
+let newLi = document.createElement("li");
+newLi.textContent = "java";
+secondlang.replaceWith(newLi)
+const firstLang = document.querySelector("li:first-child");
+firstLang.innerText = "javascript"
+
+// remove
+
+const lastLang = document.querySelector("li:last-child");
+lastLang.remove()
 
 
 
