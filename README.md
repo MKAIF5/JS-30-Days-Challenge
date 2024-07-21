@@ -16,3 +16,6 @@ COMPLETED ✔
 
 Day 6 : Arrays
 COMPLETED ✔
+
+Day 7 : Objects
+COMPLETED ✔
