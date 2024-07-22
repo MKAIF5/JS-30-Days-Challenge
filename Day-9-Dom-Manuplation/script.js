@@ -89,3 +89,12 @@ li.textContent = "my li";
 const ul = document.querySelector("ul");
 ul.appendChild(li)
 document.body.appendChild(ul)
+
+// Activity 3 : Removing Elements 
+
+// Task 5 : Select and html element and remove it from the DOM
+li.remove()
+
+// Task 6 : Remove the last child of a specific element html element
+const uls = document.querySelector(".ul");
+uls.lastElementChild.remove()
