@@ -79,7 +79,7 @@ document.getElementsByClassName("abc")[0].style.backgroundColor = "green";
 // Activity 2 : Creating and Appending Elements
 
 // Task 3 : Create a new (div) elements with some text content and append its body
-const div =  document.createElement("div");
+const div = document.createElement("div");
 div.textContent = "my div"
 document.body.appendChild(div);
 
@@ -98,3 +98,16 @@ li.remove()
 // Task 6 : Remove the last child of a specific element html element
 const uls = document.querySelector(".ul");
 uls.lastElementChild.remove()
+
+// Activity 4 : Modifying Attributes and Classes
+
+// Task 7 : Select and html element and change one of its attributes (e.g,, src of and
+// img tag )
+const img = document.querySelector("img")
+img.setAttribute("src", "https://www.youtube.com/");
+
+// Task 8 : Add and remove a CSS class to/from an html element
+const add = document.querySelector(".abc");
+add.setAttribute("style" , "padding:20px; color:green");
+document.body.appendChild(add);
+add.remove()
