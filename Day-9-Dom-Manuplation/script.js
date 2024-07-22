@@ -104,10 +104,25 @@ uls.lastElementChild.remove()
 // Task 7 : Select and html element and change one of its attributes (e.g,, src of and
 // img tag )
 const img = document.querySelector("img")
-img.setAttribute("src", "https://www.youtube.com/");
+// img.setAttribute("src", "https://www.youtube.com/");
 
 // Task 8 : Add and remove a CSS class to/from an html element
 const add = document.querySelector(".abc");
 add.setAttribute("style" , "padding:20px; color:green");
 document.body.appendChild(add);
 add.remove()
+
+// Activity 5 : Event Handling
+
+// Task 9 : Add a click event listener to a button that changes the text content
+// to the paragraph 
+const button = document.getElementById("btn");
+button.addEventListener("click" , () =>{
+    button.textContent = "updated button"
+})
+
+// Task 10 : Add a mouseover event listener to an element that changes its border color
+button.addEventListener("mouseover" , () =>{
+    button.style.border = "10px solid green"
+    // button.style.borderColor = "green"
+})
