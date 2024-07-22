@@ -22,3 +22,6 @@ COMPLETED ✔
 
 Day 8 : ES6-Features
 COMPLETED ✔
+
+Day 9 : DOM Manuplation
+COMPLETED ✔
