@@ -76,3 +76,16 @@ document.getElementById("change-1").innerText = "javascript";
 // Task 2 : Select and html element by its class and change its background color
 document.getElementsByClassName("abc")[0].style.backgroundColor = "green";
 
+// Activity 2 : Creating and Appending Elements
+
+// Task 3 : Create a new (div) elements with some text content and append its body
+const div =  document.createElement("div");
+div.textContent = "my div"
+document.body.appendChild(div);
+
+// Task 4 : Create a new (li) element and add it to existing (ul) list
+const li = document.createElement("li");
+li.textContent = "my li";
+const ul = document.querySelector("ul");
+ul.appendChild(li)
+document.body.appendChild(ul)
