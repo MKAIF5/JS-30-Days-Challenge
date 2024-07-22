@@ -104,7 +104,7 @@ uls.lastElementChild.remove()
 // Task 7 : Select and html element and change one of its attributes (e.g,, src of and
 // img tag )
 const img = document.querySelector("img")
-// img.setAttribute("src", "https://www.youtube.com/");
+img.setAttribute("src", "https://www.youtube.com/");
 
 // Task 8 : Add and remove a CSS class to/from an html element
 const add = document.querySelector(".abc");
@@ -126,3 +126,5 @@ button.addEventListener("mouseover" , () =>{
     button.style.border = "10px solid green"
     // button.style.borderColor = "green"
 })
+
+// Tasks Completed
