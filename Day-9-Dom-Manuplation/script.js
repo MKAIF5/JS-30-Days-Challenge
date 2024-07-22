@@ -35,35 +35,44 @@
 // div.appendChild(addTextDiv);
 // document.body.appendChild(div)
 
-function addlanguage(langname) {
-    const li = document.createElement("li");
-    li.innerHTML = langname
-    document.querySelector(".language").appendChild(li)
-}
-addlanguage("python")
-addlanguage("typescript")
+// function addlanguage(langname) {
+//     const li = document.createElement("li");
+//     li.innerHTML = langname
+//     document.querySelector(".language").appendChild(li)
+// }
+// addlanguage("python")
+// addlanguage("typescript")
 
-function addopilang(langname) {
-    const li = document.createElement("li");
-    const addText = document.createTextNode(langname);
-    li.appendChild(addText);
-    document.querySelector("ul").appendChild(li)
-}
-addopilang("ruby")
+// function addopilang(langname) {
+//     const li = document.createElement("li");
+//     const addText = document.createTextNode(langname);
+//     li.appendChild(addText);
+//     document.querySelector("ul").appendChild(li)
+// }
+// addopilang("ruby")
 
 // Edit
-const secondlang = document.querySelector('li:nth-child(4)');
-let newLi = document.createElement("li");
-newLi.textContent = "java";
-secondlang.replaceWith(newLi)
-const firstLang = document.querySelector("li:first-child");
-firstLang.innerText = "javascript"
+// const secondlang = document.querySelector('li:nth-child(4)');
+// let newLi = document.createElement("li");
+// newLi.textContent = "java";
+// secondlang.replaceWith(newLi)
+// const firstLang = document.querySelector("li:first-child");
+// firstLang.innerText = "javascript"
 
 // remove
 
-const lastLang = document.querySelector("li:last-child");
-lastLang.remove()
+// const lastLang = document.querySelector("li:last-child");
+// lastLang.remove()
 
 
 
 // Challenge Started
+
+// Activity 1 : Selecting and Manuplating Elements
+
+// Task 1 : Select and html element by its id and change its text content
+document.getElementById("change-1").innerText = "javascript";
+
+// Task 2 : Select and html element by its class and change its background color
+document.getElementsByClassName("abc")[0].style.backgroundColor = "green";
+
