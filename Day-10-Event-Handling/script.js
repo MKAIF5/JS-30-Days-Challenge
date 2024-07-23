@@ -1,3 +1,12 @@
+// Practice Before Practice
+
+// const imgs  = document.getElementById("img");
+// imgs.addEventListener("dblclick" , () =>{
+//     alert("pic clicked")
+// },false)
+
+
+
 // Challenge Started
 
 // Activity 1 : Basic Event Handling
@@ -27,5 +36,23 @@ div.addEventListener("mouseover", () => {
 // Task 4 : Add a (mouseout) event listener to an element that reset its background
 // color
 div.addEventListener("mouseout", () => {
-  div.style.backgroundColor = "green"
+    div.style.backgroundColor = "green"
+});
+
+// Activity 3 : Keyboard Events 
+
+// Task 5 : Add a (keydown) event listener to an input field that logs the pressed
+// to the console
+const form = document.getElementById("form");
+form.addEventListener("keydown" , (event) =>{
+    event.preventDefault()
+    console.log("kaif");
+});
+
+// Task 6 : Add a (keyup) event listener to an input field that displays the current
+// value in paragraph
+const p = document.querySelector("p");
+form.addEventListener("keyup", (event) => {
+    event.preventDefault()
+    console.log(p.textContent);
 });
