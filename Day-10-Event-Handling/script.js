@@ -56,3 +56,21 @@ form.addEventListener("keyup", (event) => {
     event.preventDefault()
     console.log(p.textContent);
 });
+
+// Activity 4 : Form Events
+
+// Task 7 : Add a (submit) event listener to a form that prevant the defaults submission
+// and log the form data to the console
+const input = document.getElementById("inp");
+form.addEventListener("submit", (event) => {
+    event.preventDefault()
+    console.log(input.value);
+});
+
+// Task 8 : Add a (change) event listener to a select dropdown that displays the 
+// selected value in paragraph
+const dropDown = document.getElementById("dropDown");
+const paragraph = document.getElementById("para");
+dropDown.addEventListener("change" , (e) =>{
+    paragraph.textContent = `selected value : ${e.target.value}`
+});
