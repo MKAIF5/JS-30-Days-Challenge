@@ -25,3 +25,6 @@ COMPLETED ✔
 
 Day 9 : DOM Manuplation
 COMPLETED ✔
+
+Day 10 : Event Handling
+COMPLETED ✔
