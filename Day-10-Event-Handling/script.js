@@ -44,7 +44,7 @@ div.addEventListener("mouseout", () => {
 // Task 5 : Add a (keydown) event listener to an input field that logs the pressed
 // to the console
 const form = document.getElementById("form");
-form.addEventListener("keydown" , (event) =>{
+form.addEventListener("keydown", (event) => {
     event.preventDefault()
     console.log("kaif");
 });
@@ -71,7 +71,7 @@ form.addEventListener("submit", (event) => {
 // selected value in paragraph
 const dropDown = document.getElementById("dropDown");
 const paragraph = document.getElementById("para");
-dropDown.addEventListener("change" , (e) =>{
+dropDown.addEventListener("change", (e) => {
     paragraph.textContent = `selected value : ${e.target.value}`
 });
 
@@ -80,8 +80,8 @@ dropDown.addEventListener("change" , (e) =>{
 // Task 9 : Add a (click) event listener to a list that logs the text content of the
 // clicked list item using event delegation
 const ul = document.getElementById("list");
-ul.addEventListener("click" , (e) =>{
-    if(e.target.tagName === "LI"){
+ul.addEventListener("click", (e) => {
+    if (e.target.tagName === "LI") {
         console.log(`checked  , ${e.target.textContent}`);
     }
 });
@@ -91,13 +91,15 @@ ul.addEventListener("click" , (e) =>{
 const myDiv = document.getElementById("main");
 const btn = document.getElementById("btn-1");
 let count = 1;
-btn.addEventListener("click" , () =>{
+btn.addEventListener("click", () => {
     const p = document.createElement("p");
     p.textContent = count++
-    p.style.color = "yellow" 
+    p.style.color = "yellow"
     p.style.backgroundColor = "red"
     p.style.padding = "20px"
     p.style.width = "30px"
     p.style.height = "10px"
     document.body.appendChild(p)
 })
+
+// Tasks Completed
