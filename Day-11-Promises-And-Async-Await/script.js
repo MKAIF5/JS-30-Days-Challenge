@@ -138,8 +138,48 @@ fetch("https://api.github.com/users/mkaif5")
         return response.json()
     })
     .then((data) => {
-        console.log(data);
+        // console.log(data);
     })
     .catch((error) => {
-        console.log(error);
+        // console.log(error);
     })
+
+// Activity 3 : Using Async / Await
+
+// Task 4 : Write an async function that waits for a promise to resolve and then logs
+// the resolved value
+const promiseResloved = new Promise((resolved, reject) => {
+    setTimeout(() => {
+        resolved("resolved run ...")
+    }, 1000);
+})
+
+async function promiseConsumedResolved() {
+    const response = await promiseResloved;
+    // console.log(response);
+}
+promiseConsumedResolved()
+
+// Task 5 : Write an async function that handles a rejected promise using try-catch 
+// and logs the error message 
+const promiseConsumed = new Promise((resolved, reject) => {
+    let error = true
+    if (!error) {
+        setTimeout(() => {
+            resolved("resolved run ...")
+        }, 1000);
+    }
+    else {
+        reject("something went wrong ....")
+    }
+})
+
+async function promiseConsumedOne() {
+    try {
+        const response = await promiseConsumed
+        console.log(response);
+    } catch (error) {
+        console.log(error);
+    }
+}
+promiseConsumedOne()
