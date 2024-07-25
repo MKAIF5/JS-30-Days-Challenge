@@ -43,28 +43,28 @@
 // })
 
 
-const promiseThree = new Promise((resolve, reject) => {
+const promisePrac = new Promise((resolve, reject) => {
     let error = false;
     setTimeout(() => {
         if (!error) {
-            resolve("correct")
+            resolve("correct resolved")
         }
         else {
-            reject("Something went wrong")
+            reject('something went wrong')
         }
     }, 1000);
 })
-async function promiseConsumedFive() {
-    let responce = await promiseThree;
-    console.log(responce);
+async function PromiseConsumed() {
+    // try {
+    //     const response = await promisePrac;
+    //     console.log(response);
+    // } catch (error) {
+    //     console.log(error);
+    // }
+    const response = await promisePrac;
+    console.log(response);
 }
-
-promiseConsumedFive()
-
-
-
-
-
+PromiseConsumed()
 
 // Challenge Start
 
