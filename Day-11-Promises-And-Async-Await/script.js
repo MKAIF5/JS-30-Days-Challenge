@@ -43,28 +43,61 @@
 // })
 
 
-const promisePrac = new Promise((resolve, reject) => {
-    let error = false;
-    setTimeout(() => {
-        if (!error) {
-            resolve("correct resolved")
-        }
-        else {
-            reject('something went wrong')
-        }
-    }, 1000);
-})
-async function PromiseConsumed() {
-    // try {
-    //     const response = await promisePrac;
-    //     console.log(response);
-    // } catch (error) {
-    //     console.log(error);
-    // }
-    const response = await promisePrac;
-    console.log(response);
-}
-PromiseConsumed()
+// const promisePrac = new Promise((resolve, reject) => {
+//     let error = false;
+//     setTimeout(() => {
+//         if (!error) {
+//             resolve("correct resolved")
+//         }
+//         else {
+//             reject('something went wrong')
+//         }
+//     }, 1000);
+// })
+// async function PromiseConsumed() {
+// try {
+//     const response = await promisePrac;
+//     console.log(response);
+// } catch (error) {
+//     console.log(error);
+// }
+// const response = await promisePrac;
+// console.log(response);
+// }
+// PromiseConsumed()
+
+// async await (fetch)
+
+// async function getUsers() {
+//     try {
+//         const response = await fetch("https://api.github.com/users/mkaif5");
+//         const data = response.json();
+//         console.log(data);
+
+//     } catch (error) {
+//         console.log(error);
+//     }
+// }
+// getUsers()
+
+// .then and .catch (fetch)
+
+fetch("https://api.github.com/users/mkaif5")
+    .then((response) => {
+        return response.json()
+    })
+    .then((data) => {
+        console.log(data);
+    })
+    .catch((error) => {
+        console.log(error);
+    })
+
+
+
+
+
+
 
 // Challenge Start
 
