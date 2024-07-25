@@ -104,7 +104,7 @@
 // and log the message to the console
 const promiseOne = new Promise((resolve, reject) => {
     setTimeout(() => {
-        // console.log("run message ...");
+        console.log("run message ...");
         resolve()
     }, 2000)
 })
@@ -120,13 +120,13 @@ const promiseTwo = new Promise((resolve, reject) => {
 })
 try {
     promiseTwo.then((resp) => {
-        // console.log(resp);
+        console.log(resp);
     })
         .catch((err) => {
-            // console.log(err);
+            console.log(err);
         })
 } catch (error) {
-    // console.log(error);
+    console.log(error);
 }
 
 // Activity 2 : Chaining Promise
@@ -138,15 +138,15 @@ fetch("https://api.github.com/users/mkaif5")
         return response.json()
     })
     .then((data) => {
-        // console.log(data);
+        console.log(data);
     })
     .catch((error) => {
-        // console.log(error);
+        console.log(error);
     })
 
 // Activity 3 : Using Async / Await
 
-// Task 4 : Write an async function that waits for a promise to resolve and then logs
+// Task 4 : Write an (async) function that waits for a promise to resolve and then logs
 // the resolved value
 const promiseResloved = new Promise((resolved, reject) => {
     setTimeout(() => {
@@ -156,11 +156,11 @@ const promiseResloved = new Promise((resolved, reject) => {
 
 async function promiseConsumedResolved() {
     const response = await promiseResloved;
-    // console.log(response);
+    console.log(response);
 }
 promiseConsumedResolved()
 
-// Task 5 : Write an async function that handles a rejected promise using try-catch 
+// Task 5 : Write an (async) function that handles a rejected promise using (try-catch) 
 // and logs the error message 
 const promiseConsumed = new Promise((resolved, reject) => {
     let error = true
@@ -183,3 +183,31 @@ async function promiseConsumedOne() {
     }
 }
 promiseConsumedOne()
+
+// Activity 4 : Fetching Data from an API
+
+// Task 6 : Use the (fetch) API to get the data from public a API and log the response
+// data to the console using promises
+fetch("https://api.github.com/users/mkaif5")
+    .then((response) => {
+        return response.json()
+    })
+    .then((data) => {
+        console.log(data);
+    })
+    .catch((error) => {
+        console.log(error);
+    })
+
+// Task 7 : Use the (fetch) API to get the data from public a API and log the response
+// data to the console using async/await
+const getFetchData = async () => {
+    try {
+        const response = await fetch("https://api.github.com/users/mkaif5")
+        const data = response.json()
+        console.log(data);
+    } catch (error) {
+        console.log(error);
+    }
+}
+getFetchData()
