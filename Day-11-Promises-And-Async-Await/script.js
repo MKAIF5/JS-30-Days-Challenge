@@ -42,6 +42,30 @@
 //     console.log("the promises resolved and rejected");
 // })
 
+
+const promiseThree = new Promise((resolve, reject) => {
+    let error = false;
+    setTimeout(() => {
+        if (!error) {
+            resolve("correct")
+        }
+        else {
+            reject("Something went wrong")
+        }
+    }, 1000);
+})
+async function promiseConsumedFive() {
+    let responce = await promiseThree;
+    console.log(responce);
+}
+
+promiseConsumedFive()
+
+
+
+
+
+
 // Challenge Start
 
 // Activity 1 : Understanding Promises
@@ -74,3 +98,8 @@ try {
 } catch (error) {
     // console.log(error);
 }
+
+// Activity 2 : Chaining Promise
+
+// Task 3 : Create a squence promise that simulate fetching data from a server .
+// chain the promises to the log message in a specific order
