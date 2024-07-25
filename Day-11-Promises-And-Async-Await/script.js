@@ -82,19 +82,16 @@
 
 // .then and .catch (fetch)
 
-fetch("https://api.github.com/users/mkaif5")
-    .then((response) => {
-        return response.json()
-    })
-    .then((data) => {
-        console.log(data);
-    })
-    .catch((error) => {
-        console.log(error);
-    })
-
-
-
+// fetch("https://api.github.com/users/mkaif5")
+//     .then((response) => {
+//         return response.json()
+//     })
+//     .then((data) => {
+//         console.log(data);
+//     })
+//     .catch((error) => {
+//         console.log(error);
+//     })
 
 
 
@@ -136,3 +133,13 @@ try {
 
 // Task 3 : Create a squence promise that simulate fetching data from a server .
 // chain the promises to the log message in a specific order
+fetch("https://api.github.com/users/mkaif5")
+    .then((response) => {
+        return response.json()
+    })
+    .then((data) => {
+        console.log(data);
+    })
+    .catch((error) => {
+        console.log(error);
+    })
