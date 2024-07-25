@@ -93,7 +93,31 @@
 //         console.log(error);
 //     })
 
+const promises_1 = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        resolve("promsise 1")
+    }, 1000);
+})
 
+const promises_2 = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        resolve("promsise 2")
+    }, 1000);
+})
+
+const promises_3 = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        resolve("promsise 3")
+    }, 1000);
+})
+
+Promise.all([promises_1, promises_2, promises_3])
+    .then((response) => {
+        console.log(response);
+    })
+    .catch((error) => {
+        console.log( "ERROR ",error);
+    })
 
 
 // Challenge Start
