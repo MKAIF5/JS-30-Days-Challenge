@@ -28,3 +28,6 @@ COMPLETED ✔
 
 Day 10 : Event Handling
 COMPLETED ✔
+
+Day 11 : Promises And Async/Await
+COMPLETED ✔
