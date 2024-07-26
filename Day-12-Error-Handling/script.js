@@ -32,7 +32,7 @@ func()
 // denominator is zero . use a try catch block to handle this error
 const func2 = (num1, num2) => {
     try {
-        if (num1 === 0 ) {
+        if (num1 === 0) {
             throw new Error("cannot divided by zero")
         }
     } catch (error) {
@@ -48,9 +48,62 @@ const func2 = (num1, num2) => {
 // messages in the try/catch and finally blocks to observe the execution flow
 try {
     // console.log(kaif);
-    
+
 } catch (error) {
     // console.log(error);
-}finally{
+} finally {
     // console.log("try and catch resolved aur rejected");
+}
+
+// Activity 3 : Custom Error Objects
+
+// Task 4 : Create a custom error class that extends the built in error class. throw
+// and instance of this custom error in a function  and handle it using a try-catch
+// block
+class CustomError extends Error {
+    constructor(message) {
+        supper(message);
+        this.name = "CustomError";
+    }
+}
+function throwErrorFunction() {
+    throw new CustomError('This is a custom error message.');
+}
+
+try {
+    throwErrorFunction();
+} catch (error) {
+    if (error instanceof CustomError) {
+        console.error("Caught a custom error:", error.message);
+    } else {
+        console.error("Caught an unexpected error:", error)
+    }
+
+}
+
+// Task 5 : Write a function that validates user input (e.g , checking if a string is
+// not empty) and throws a custom errors if the validation fails . handle the custom
+// error using a try-catch block
+class ValidationError extends Error {
+    constructor(message) {
+        super(message);
+        this.name = "ValidationError";
+    }
+}
+function checkStringFun(input) {
+    if (!input || typeof input !== "string" || input.trim() === "") {
+        throw new ValidationError("Invalid input: input must be a non-empty string.");
+    }
+    return true;
+}
+
+try {
+    checkStringFun("");
+    console.log("Input is valid.")
+} catch (error) {
+    if (error instanceof ValidationError) {
+        console.log("Validation error:", error.message);
+    } else {
+        console.log("An unexpected error occured: ", error);
+    }
 }
