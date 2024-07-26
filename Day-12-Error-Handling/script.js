@@ -107,3 +107,40 @@ try {
         console.log("An unexpected error occured: ", error);
     }
 }
+
+// Activity 4 : Error Handling in Promises
+
+// Task 6 : Create a promises that randomly resolves or rejects use (.catch) to handle 
+// the rejection and log an apporpriate message to the console
+const promisesErr = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        reject("rejection")
+    }, 1000);
+})
+    .then((resp) => {
+        console.log(resp);
+    })
+    .catch((error) => {
+        console.log(error);
+    })
+
+// Task 7 : Use Try/Catch With an async function to handle errors from a promise that
+// randomly resolves or rejects , and log the error message
+async function handleErrors() {
+    try {
+        await new Promise((resolve, reject) => {
+            let error = false;
+            setTimeout(() => {
+                if (!error) {
+                    resolve("error is not defined");
+                }
+            }, 1000);
+            setTimeout(() => {
+                reject("error is defined")
+            }, 1000);
+        })
+    } catch (error) {
+        console.log(error);
+    }
+}
+console.log(handleErrors())
