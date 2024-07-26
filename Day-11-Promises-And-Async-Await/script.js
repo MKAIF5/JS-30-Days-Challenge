@@ -116,7 +116,7 @@ Promise.all([promises_1, promises_2, promises_3])
         console.log(response);
     })
     .catch((error) => {
-        console.log( "ERROR ",error);
+        console.log("ERROR ", error);
     })
 
 
@@ -235,3 +235,43 @@ const getFetchData = async () => {
     }
 }
 getFetchData()
+
+// Activity 5 : Concurrent promises
+
+// Task 8 : Use (Promise.all) to wait for multiple promsies to resolve and then log
+// all thier values .
+const promiseOnes = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        resolve("promise one")
+    }, 1000);
+})
+
+const promiseTwos = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        resolve("promise two")
+    }, 1000);
+})
+
+const promiseThrees = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        resolve("promise three")
+    }, 1000);
+})
+
+Promise.all([promiseOnes, promiseTwos, promiseThrees])
+    .then((response) => {
+        console.log(response);
+    })
+    .catch((error) => {
+        console.log(error);
+    })
+
+// Task 9 : Use (promise.race) to log the value of the first promise that resolve among
+// multiple promises
+Promise.race([promiseOnes, promiseTwos, promiseThrees])
+    .then((result) => {
+        console.log(result);
+    })
+    .catch((error) => {
+        console.log(error);
+    })
