@@ -20,10 +20,10 @@
 // block to handle the error and log an appropriate message to the console
 const func = () => {
     try {
-        // console.log(kaif);
+        console.log(kaif);
 
     } catch (error) {
-        // console.log(error);
+        console.log(error);
     }
 }
 func()
@@ -36,7 +36,7 @@ const func2 = (num1, num2) => {
             throw new Error("cannot divided by zero")
         }
     } catch (error) {
-        // console.log(error);
+        console.log(error);
     }
     return num1 / num2
 }
@@ -47,12 +47,12 @@ const func2 = (num1, num2) => {
 // Task 3 : Write a scripts that includes a try/catch block and a finally block. log
 // messages in the try/catch and finally blocks to observe the execution flow
 try {
-    // console.log(kaif);
+    console.log(kaif);
 
 } catch (error) {
-    // console.log(error);
+    console.log(error);
 } finally {
-    // console.log("try and catch resolved aur rejected");
+    console.log("try and catch resolved aur rejected");
 }
 
 // Activity 3 : Custom Error Objects
@@ -144,3 +144,28 @@ async function handleErrors() {
     }
 }
 console.log(handleErrors())
+
+// Activity 5 : Gracefull Error Handling in Fetch
+
+// Task 8 : Use the (fetch) API to reqwest the data from an invalid URL and handle the
+// error using (.catch) . log an appropriate error message to the console
+fetch("https://apii.github.com/users/mkaif5")
+    .then((resp) => {
+        resp.json()
+        console.log(resp);
+    })
+    .catch((error) => {
+        console.log("invalid url", error);
+    })
+
+// Task 9 : Use the (fetch) API to reqwest the data from an invalid URL with an async
+// function and handle the error using try-catch. log appropriate error message 
+async function handleErrors() {
+    try {
+        const response = await fetch("https://aiiiiii.github.com/users/mkaif5");
+        const data = response.json()
+        console.log(data);
+    } catch (error) {
+        console.log("handle error");
+    }
+}
