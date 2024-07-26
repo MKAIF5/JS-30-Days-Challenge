@@ -41,3 +41,16 @@ const func2 = (num1, num2) => {
     return num1 / num2
 }
 // console.log(func2(10 , 5));   
+
+// Activity 2 : Finally Block
+
+// Task 3 : Write a scripts that includes a try/catch block and a finally block. log
+// messages in the try/catch and finally blocks to observe the execution flow
+try {
+    // console.log(kaif);
+    
+} catch (error) {
+    // console.log(error);
+}finally{
+    // console.log("try and catch resolved aur rejected");
+}
