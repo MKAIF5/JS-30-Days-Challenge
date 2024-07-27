@@ -31,17 +31,17 @@ const mul = (m1, m2) => {
     return m1 * m2
 }
 
-const div = (d1 , d2) => {
-   return d1 / d2
+const div = (d1, d2) => {
+    return d1 / d2
 }
 
-export {add}
-export {mul}
-export {div}
+export { add }
+export { mul }
+export { div }
 
 // Task 4 :  Create a module that exports a single functions using default exports. 
 // import and use this function in another scripts
-export default function min(){
+export default function min() {
     return 3 - 1
 }
 
@@ -59,3 +59,26 @@ export const Person = {
     Branch: "CSE",
     College: "NIT"
 }
+
+// Activity 4 : Using Third-Party Modules
+
+// Task 6 : Install a third party module (e.g lodash) using npm. import and use a 
+// function from this module in a script
+const _ = require('lodash');
+
+const arr = [1, 2, 3];
+const doubled = _.map(arr, x => x * 2);
+console.log(doubled);
+
+// Task 7 : Install a third party module (e.g axios) using npm. import and use this 
+// module to make a network reqwest in a script
+const axios = require('axios'); // Import axios for HTTP requests
+
+// Example of making a GET request
+axios.get('https://api.github.com/users/debanjali081')
+    .then(response => {
+        console.log(response.data); // Handle the response data
+    })
+    .catch(error => {
+        console.error('Error:', error); // Handle errors
+    });
