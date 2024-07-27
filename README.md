@@ -31,3 +31,6 @@ COMPLETED ✔
 
 Day 11 : Promises And Async/Await
 COMPLETED ✔
+
+Day 12 : Modules 
+COMPLETED ✔
