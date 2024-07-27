@@ -82,3 +82,8 @@ axios.get('https://api.github.com/users/debanjali081')
     .catch(error => {
         console.error('Error:', error); // Handle errors
     });
+
+// Activity 5 : Module Bundling (Optional)
+
+// Task 8 : Use a module bindler like webpack or Parcel to bundle multiple javascripts
+// files into a single file. Write a script to demonstarte the bundling process
