@@ -44,3 +44,18 @@ export {div}
 export default function min(){
     return 3 - 1
 }
+
+// Activity 3 : Importing Intire Modules
+
+// Task 5 : Create a module that exports multiple constants and function.import 
+// the entire module as an object in another script and use its properties.
+export const adds = (a, b) => a + b;
+export const muls = (a, b) => a * b;
+export const divs = (a, b) => a / b;
+export const subs = (a, b) => a - b;
+
+export const Person = {
+    Name: "Debanjali",
+    Branch: "CSE",
+    College: "NIT"
+}

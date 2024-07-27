@@ -5,3 +5,9 @@ console.log(add(10, 5));
 console.log(mul(10, 5));
 console.log(div(10, 5));
 console.log(min());
+
+import * as All from "./module.js";
+
+console.log(All.add(3, 5));
+
+console.log(All.Person["College"]);
