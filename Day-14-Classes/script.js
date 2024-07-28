@@ -173,4 +173,38 @@ class Student2 extends Person2 {
   const salman = new Student2("salman", 28, 7);
   console.log(`No.of students => ${Student2.countStudents}`);
   console.groupEnd();
-  
+
+// Activity 4 : Getters and Setters
+
+// Task 7 : Add a getter method to the Person class to return the full name (assume 
+// a firstName and lastName property) Create an instance and log the full name using
+// the getter
+Person2.prototype.getName = function () {
+    return `${this.firstName} ${this.lastName}`;
+  };
+  const vaibhav = new Person2("Vaibhav", 26, "Kumar");
+  console.log("Full name is ", vaibhav.getName());  
+
+// Task 8: Add a setter method to the Person class to update the name property 
+//(firstName and lastName). Update the name using the setter and log the updated 
+// full name.
+Person2.prototype.setFirstName = function (first) {
+    this.firstName = first;
+  };
+  Person2.prototype.setLastName = function (last) {
+    this.setLastName = last;
+  };
+  mubashir.setFirstName("abdullah");
+  mubashir.setLastName("asim");
+  console.log("Full name is ", mubashir.getName());
+  console.groupEnd();
+
+// !Activity 5: Private Fields (Optional)
+
+// Task 9: Define a class Account with private fields for balance and a method to 
+// deposit and withdraw money. Ensure that the balance only be updated through these 
+// methods.
+
+// postponed
+
+// Tasks Completed
