@@ -34,3 +34,6 @@ COMPLETED ✔
 
 Day 12 : Modules 
 COMPLETED ✔
+
+Day 13 : Classes
+COMPLETED ✔
