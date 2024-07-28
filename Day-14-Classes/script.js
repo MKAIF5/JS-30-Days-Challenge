@@ -42,6 +42,36 @@
 
 // getUsers.addCourse()
 
+
+// class User1 {
+//     constructor(username) {
+//         this.username = username
+//     }
+//     logMe() {
+//         return `Username is : ${this.username}`
+//     }
+
+//      static createID() {
+//         return "123"
+//     }
+// }
+
+// const getUserId = new User1("kaif");
+// console.log(getUserId.createID())
+
+
+// class Teachers extends User1{
+//     constructor(username , email){
+//         super(username)
+//         this.email = email
+//     }
+// }
+
+// const supra = new Teachers("supra" , "supra@supra.com");
+// console.log(supra.logMe());
+
+
+
 // Challenge Started
 
 // Activity 1 : Class Defination
@@ -85,13 +115,13 @@ console.log(getPersons.changeAge());
 // and a method to return student ID. Create an instance of the class class and log the
 // student ID.
 class Student extends Person {
-  constructor(name, age, id) {
-    super(name, age);
-    this.studentId = id;
-  }
-  getStudentId() {
-    return this.studentId;
-  }
+    constructor(name, age, id) {
+        super(name, age);
+        this.studentId = id;
+    }
+    getStudentId() {
+        return this.studentId;
+    }
 }
 const getId = new Student("kaif", 30, 2);
 console.log("Student ID of kaif", getId.getStudentId());
@@ -101,6 +131,46 @@ console.log("Greet kaif", getId.greet());
 // in the message. Log the ovveriden greeting message
 Student.prototype.greet = function () {
     return `Welcome ${this.name} Id:(${this.studentId})`;
-  };
-  console.log("Greet kaif", getId.greet());
-  console.groupEnd();   
+};
+console.log("Greet kaif", getId.greet());
+console.groupEnd();   
+
+// Activity 3 : Static Methods and Properties
+
+// Task 5 : Add a static method to the person class that return a generic greeting 
+// message. call this static method without creating an instance of the class and log 
+// the message 
+class Persons {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age
+    }
+  static  greetingMessage() {
+        return `${this.name} welcome`
+    }
+    changeAge() {
+        return `${this.age}15`
+    }
+}
+
+// Task 6 : Add a static property to a student class to keep track of the number of 
+// students created. increament this property in the constructor and log the total 
+// number of students
+class Student2 extends Person2 {
+    static countStudents = 0;
+    constructor(name, age, id) {
+      super(name, age);
+      this.studentId = id;
+      Student2.countStudents++;
+    }
+  
+    getStudentId() {
+      return this.studentId;
+    }
+  }
+  const arham = new Student2("arham", 18, 3);
+  const imran = new Student2("imran", 22, 5);
+  const salman = new Student2("salman", 28, 7);
+  console.log(`No.of students => ${Student2.countStudents}`);
+  console.groupEnd();
+  
