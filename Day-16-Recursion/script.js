@@ -33,3 +33,33 @@ console.log(`Fibonacii of five is : ${fibonacciOfFive}`)
 
 const fibonacciOfTwenty = fibonacci(20)
 console.log(`Fibonacci of 20 is : ${fibonacciOfTwenty}`);
+
+// Activity 2 : Recursions WIth Arrays
+
+// Task 3 : Write a recursive function to find the sum of all elements in array. Log 
+// the result for few of testcases
+function ClaculateArray(currentSum, array, index) {
+    if (index === array.length) {
+        return currentSum
+    }
+    currentSum += array[index]
+    return ClaculateArray(currentSum, array, ++index)
+}
+
+const lambiLoop = ClaculateArray(0, [1, 2, 3, 4, 5], 0)
+console.log(lambiLoop);
+
+// Task 4 :  write a recursive function to find the maximum element in an array. Log
+// the result
+const maximumFind = (max, array, index) => {
+    if (index === array.length) {
+        return max
+    }
+    if (max <= array[index]) {
+        max = array[index]
+    }
+    return maximumFind(max, array, ++index)
+}
+
+const finding = maximumFind(0, [1, 45, 324, 646, 3543, 64, 645], 0)
+console.log(`maximum number ${finding}`);
