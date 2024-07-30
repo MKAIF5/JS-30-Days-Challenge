@@ -4,7 +4,6 @@
 
 // Task 1 : Write a recursive function to calculate the factorial of a number . Log 
 // the result for a few test cases.
-
 function factorial(n) {
     if (n === 0) {
         return 1
@@ -22,7 +21,6 @@ console.log(factorial(2));
 
 // Task 2 : Write a recursive function to calculate the nth Fibonacci number . Log 
 // the result for a few test cases.
-
 const fibonacci = (number) => {
     if (number === 1 || number === 2) return number - 1
     return fibonacci(number - 1) + fibonacci(number - 2)
@@ -135,3 +133,5 @@ console.log(`The count is : ${calculateOccurance}`)
 // Activity 5 : Tree Traversal (Optional)
 
 // Postponed
+
+// Tasks Completed
