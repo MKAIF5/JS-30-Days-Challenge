@@ -131,3 +131,7 @@ const calculateTargetOccuranceCount = (array, index, target, count) => {
 const countArray = [1, 4, 4, 5, 63, 242, 7, 7, 4, 4]
 const calculateOccurance = calculateTargetOccuranceCount(countArray, 0, 7, 0)
 console.log(`The count is : ${calculateOccurance}`)
+
+// Activity 5 : Tree Traversal (Optional)
+
+// Postponed
