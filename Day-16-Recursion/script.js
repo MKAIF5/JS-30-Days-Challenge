@@ -83,9 +83,51 @@ const palidromeCheck = (str) => {
     if (str[str.length - 1] != str[0]) {
         return false
     }
-    if(str.length <= 1){
+    if (str.length <= 1) {
         return true
     }
-   return palidromeCheck(str.slice(1 , -1))
+    return palidromeCheck(str.slice(1, -1))
 }
-console.log(palidromeCheck("5530110355"))
+console.log(palidromeCheck("5530110355"));
+
+// Activity 4 : Recursive Search
+
+// Task 7: Write a recursive function to perform a binary search on a sorted array. Log
+// the index of the target element.
+const sortedArray = (arr, south, east, target) => {
+    if (south > east) {
+        return -1
+    }
+    let middleIndex = (south + east) / 2
+    if (arr[middleIndex] === target) {
+        return middleIndex
+    }
+    else if (arr[middleIndex] < target) {
+        return sortedArray(arr, middleIndex + 1, east, target)
+    }
+    else {
+        return sortedArray(arr, south, middleIndex, target)
+    }
+}
+
+const binarySearch = [2, 4, 5, 6, 7, 9];
+const SearchFive = sortedArray(binarySearch, 0, binarySearch.length - 1, 5)
+const SearchEleven = sortedArray(binarySearch, 0, binarySearch.length - 1, 11)
+console.log(SearchFive);
+console.log(SearchEleven);
+
+// Task 8 : Write a recursive function to count the occurrences of a target element in
+// an array. Log the index of the target element.
+const calculateTargetOccuranceCount = (array, index, target, count) => {
+    if (array.length === index) {
+        return count
+    }
+    if (array[index] === target) {
+        count++
+    }
+    return calculateTargetOccuranceCount(array, ++index, target, count)
+}
+
+const countArray = [1, 4, 4, 5, 63, 242, 7, 7, 4, 4]
+const calculateOccurance = calculateTargetOccuranceCount(countArray, 0, 7, 0)
+console.log(`The count is : ${calculateOccurance}`)
