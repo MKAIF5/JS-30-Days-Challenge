@@ -147,3 +147,46 @@ itemModule.removeItem(1);
 itemModule.removeItem(10); 
 
 itemModule.getItem();
+
+// Activity 5 : Momoization
+
+// Task 7 : Write a function that memoizes the results of another function. Use closure
+// to store the results of previous computations.
+function calcSquareRoot() {
+    const cache = {};
+
+    return function getSquareRoot(num) {
+        if (cache[num]) return cache[num];
+        setTimeout(() => {
+            const result = Math.sqrt(num).toFixed(3);
+            cache[num] = result;
+            console.log(`The square root of ${num} is ${result}`);
+        }, 4000);
+        getSquareRoot()
+    }
+}
+
+calcSquareRoot()
+
+// Task 8 : Create a memoized version of a function that calculates the factorial of a
+// number
+function factorial() {
+    const memo = { };
+
+    function factNumber(num) {
+        if (num in memo) return memo[num];
+
+        if (num < 0) return `not defined`;
+
+        if (num == 0 || num == 1) return 1;
+
+        memo[num] = num * factNumber(num-1);
+
+        return memo[num];
+    }
+    return factNumber;
+}
+
+const fac = factorial();
+const number = 6;
+console.log(`The factorial of ${number} is ${fac(number)}`);
