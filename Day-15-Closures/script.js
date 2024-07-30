@@ -190,3 +190,5 @@ function factorial() {
 const fac = factorial();
 const number = 6;
 console.log(`The factorial of ${number} is ${fac(number)}`);
+
+// Tasks Completed
