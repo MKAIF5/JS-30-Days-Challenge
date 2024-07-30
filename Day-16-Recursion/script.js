@@ -63,3 +63,29 @@ const maximumFind = (max, array, index) => {
 
 const finding = maximumFind(0, [1, 45, 324, 646, 3543, 64, 645], 0)
 console.log(`maximum number ${finding}`);
+
+// Activity 3 : String Manipulation With Recursion
+
+// Task 5 : Write a recursive function to reverse a string. Log the result for few
+// testcases
+const reverseString = (str) => {
+    if (str.length <= 1) {
+        return str
+    }
+    return str[str.length - 1] + reverseString(str.slice(0, -1))
+}
+
+console.log(reverseString("kaif"));
+
+// Task 6 : Write a recursive function to check if a string is pallindrome. Log the
+// result
+const palidromeCheck = (str) => {
+    if (str[str.length - 1] != str[0]) {
+        return false
+    }
+    if(str.length <= 1){
+        return true
+    }
+   return palidromeCheck(str.slice(1 , -1))
+}
+console.log(palidromeCheck("5530110355"))
