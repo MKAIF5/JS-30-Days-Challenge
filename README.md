@@ -43,3 +43,6 @@ COMPLETED ✔
 
 Day 15 : Clousers
 COMPLETED ✔
+
+Day 16 : Recursion
+COMPLETED ✔
