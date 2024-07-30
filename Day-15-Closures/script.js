@@ -70,7 +70,6 @@ uniqueId()
 
 // Task 4 : Create a clouser that captures a user's name and return a function that 
 // greets the user by name.
-
 function outerGreet() {
     const greets = "Mohammad Kaif"
     function innerGreet() {
@@ -80,3 +79,22 @@ function outerGreet() {
 }
 
 outerGreet()
+
+// Activity 3 : Clousers in Loops
+
+// Task 5 : Write a loop that creates an array of functions. Each function should
+// log its index when called. Use a closure to ensure each function logs 
+// the correct index.
+const arr = [];
+
+for (let i = 0; i <= 10; i++) {
+    arr.push(
+        function () {
+            return function () {
+                console.log(`function ${i + 1}  index is ${i}`);
+            }
+        }
+    )
+}
+
+arr.map(func => func()())
