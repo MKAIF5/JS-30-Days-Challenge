@@ -32,8 +32,14 @@ COMPLETED ✔
 Day 11 : Promises And Async/Await
 COMPLETED ✔
 
-Day 12 : Modules 
+Day 12 : Error Handling 
 COMPLETED ✔
 
-Day 13 : Classes
+Day 13 : Modules
+COMPLETED ✔
+
+Day 14 : Classes
+COMPLETED ✔
+
+Day 15 : Clousers
 COMPLETED ✔
