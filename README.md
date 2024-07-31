@@ -46,3 +46,12 @@ COMPLETED ✔
 
 Day 16 : Recursion
 COMPLETED ✔
+
+Day 17 : Data Structures
+Postponed
+
+Day 18 : Algorithms
+Postponed
+
+Day 19 : Regular Expression
+Postponed
