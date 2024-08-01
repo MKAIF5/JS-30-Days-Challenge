@@ -67,16 +67,16 @@ const email = document.querySelector("#email");
 button.addEventListener("click", (event) => {
     const nameValue = names.value;
     const emailValue = email.value;
-   
-    localStorage.setItem("name" , nameValue)
-    localStorage.setItem("email" , emailValue)
+
+    localStorage.setItem("name", nameValue)
+    localStorage.setItem("email", emailValue)
 })
 
 // Task 4: write a script to remove an item form localstorage. log the localstorage
 // content before and after removel;
-let beforeRemove = () =>{
-    localStorage.setItem("job1" , "javascript with react");
-    localStorage.setItem("job2" , "python with djanngo");
+let beforeRemove = () => {
+    localStorage.setItem("job1", "javascript with react");
+    localStorage.setItem("job2", "python with djanngo");
     console.log(`before remove ${localStorage.getItem("job1")} , ${localStorage.getItem("job2")}`);
 }
 
@@ -101,8 +101,8 @@ beforeRemove()
 // Task 5 : write a script to save an string value to sessionStorage and retrieve it.
 // log the retrieved value.
 let key = "name";
-let value  = "kaif";
-sessionStorage.setItem(key , value)
+let value = "kaif";
+sessionStorage.setItem(key, value)
 
 // Task 6 : write a script to save an object to session storage by cnverting it to a
 // json string .retrieve  and parse the object and the log it ;
@@ -113,5 +113,40 @@ const users = {
     isLogginIn: true
 }
 
-sessionStorage.setItem("person" , JSON.stringify(users));
+sessionStorage.setItem("person", JSON.stringify(users));
 console.log(sessionStorage.getItem("person"));
+
+// Activity 4 : Using SessionStorage
+
+// Task 7 : Create a simple form that saves user input (e.g , name and email) to session
+// Storage when submitted. retrived and display the saved data on page load
+button.addEventListener("click", () => {
+    const sessionName = names.value;
+    const sessionEmail = email.value;
+    sessionStorage.setItem("name", sessionName);
+    sessionStorage.setItem("email", sessionEmail)
+})
+
+// Task 8 : write a script to remove an item form sessionStorage .log the sessionStorage
+// content before and after removel;
+let beforeRemoveSession = () => {
+    sessionStorage.setItem("job2", "python with djanngo");
+    sessionStorage.setItem("job1", "javascript with react");
+    console.log(`before remove ${sessionStorage.getItem("job1")} , ${sessionStorage.getItem("job2")}`);
+}
+
+beforeRemoveSession()
+
+let promp = prompt("enter your choice");
+
+if (promp === "js with react") {
+    sessionStorage.removeItem("job2")
+}
+
+else if (promp === "pyt with django") {
+    sessionStorage.removeItem("job1")
+}
+
+else {
+    alert("dosen't match in job")
+}
