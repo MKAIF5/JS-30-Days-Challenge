@@ -82,16 +82,36 @@ let beforeRemove = () =>{
 
 beforeRemove()
 
-let prom = prompt("enter your choice");
+// let prom = prompt("enter your choice");
 
-if(prom === "js with react"){
-    localStorage.removeItem("job2")
+// if(prom === "js with react"){
+//     localStorage.removeItem("job2")
+// }
+
+// else if(prom === "pyt with django"){
+//     localStorage.removeItem("job1")
+// }
+
+// else{
+//     // alert("dosen't match in job")
+// }
+
+// Activity 3 : Understanding SessionStorage
+
+// Task 5 : write a script to save an string value to sessionStorage and retrieve it.
+// log the retrieved value.
+let key = "name";
+let value  = "kaif";
+sessionStorage.setItem(key , value)
+
+// Task 6 : write a script to save an object to session storage by cnverting it to a
+// json string .retrieve  and parse the object and the log it ;
+const users = {
+    name: "kaif",
+    age: 15,
+    location: "karachi",
+    isLogginIn: true
 }
 
-else if(prom === "pyt with django"){
-    localStorage.removeItem("job1")
-}
-
-else{
-    alert("dosen't match in job")
-}
+sessionStorage.setItem("person" , JSON.stringify(users));
+console.log(sessionStorage.getItem("person"));
