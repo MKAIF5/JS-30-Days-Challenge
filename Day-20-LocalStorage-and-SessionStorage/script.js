@@ -32,7 +32,6 @@
 
 
 
-
 // Challenge Started
 
 //  Activity 1 : Understanding LocalStorage
@@ -44,7 +43,6 @@ console.log(keyValue);
 
 // Task 2 : Write a script to save an object to `localStorage` by converting it to a
 // JSON string. Retrieve and parse the object, then log it.
-
 const user = {
     name: "kaif",
     age: 15,
@@ -82,19 +80,19 @@ let beforeRemove = () => {
 
 beforeRemove()
 
-// let prom = prompt("enter your choice");
+let prom = prompt("enter your choice");
 
-// if(prom === "js with react"){
-//     localStorage.removeItem("job2")
-// }
+if(prom === "js with react"){
+    localStorage.removeItem("job2")
+}
 
-// else if(prom === "pyt with django"){
-//     localStorage.removeItem("job1")
-// }
+else if(prom === "pyt with django"){
+    localStorage.removeItem("job1")
+}
 
-// else{
-//     // alert("dosen't match in job")
-// }
+else{
+    alert("dosen't match in job")
+}
 
 // Activity 3 : Understanding SessionStorage
 
@@ -156,7 +154,6 @@ else {
 // Task 9 : Write a function to accept a key and a value, and saves the value to both
 // localStorage and sessionStorage. Retrieve and log the values from both storage
 // mechanisms.
-
 const keyValues = () => {
     const key = prompt("Enter your key to your want to set");
     const value = prompt("Enter your value to your want to set");
@@ -170,7 +167,6 @@ keyValues()
 
 // Task 10 : Write a function that clears all data from localStorage and sessionStorage.
 // Verify that both storages are empty
-
 const emptyAll = () =>{
     if(key == 0 && value == 0){
         localStorage.clear()
@@ -178,3 +174,5 @@ const emptyAll = () =>{
     }
 }
 emptyAll()
+
+// Tasks Completed
