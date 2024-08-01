@@ -55,3 +55,6 @@ Postponed
 
 Day 19 : Regular Expression
 Postponed
+
+Day 20 : LocalStorage and SessionStorage
+COMPLETED ✔
