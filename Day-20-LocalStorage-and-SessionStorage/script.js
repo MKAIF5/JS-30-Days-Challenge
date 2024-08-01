@@ -150,3 +150,31 @@ else if (promp === "pyt with django") {
 else {
     alert("dosen't match in job")
 }
+
+// Activity 5 : Comparing LocalStorage and SessionStorage
+
+// Task 9 : Write a function to accept a key and a value, and saves the value to both
+// localStorage and sessionStorage. Retrieve and log the values from both storage
+// mechanisms.
+
+const keyValues = () => {
+    const key = prompt("Enter your key to your want to set");
+    const value = prompt("Enter your value to your want to set");
+    localStorage.setItem(key, value);
+    sessionStorage.setItem(key, value);
+    console.log(`the key is ${key} and value is ${localStorage.getItem(key)}`);
+    console.log(`the key is ${key} and value is ${sessionStorage.getItem(key)}`);
+}
+
+keyValues()
+
+// Task 10 : Write a function that clears all data from localStorage and sessionStorage.
+// Verify that both storages are empty
+
+const emptyAll = () =>{
+    if(key == 0 && value == 0){
+        localStorage.clear()
+        sessionStorage.clear()
+    }
+}
+emptyAll()
