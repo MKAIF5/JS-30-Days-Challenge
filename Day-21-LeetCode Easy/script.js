@@ -27,3 +27,20 @@ const takeArray = (arr, target) => {
 
 console.log(takeArray([4, 6, 47, 45], 9));
 
+// Activity 2: Reverse Integer
+
+// Task 2: Solve the "Reverse Integer" problem on LeetCode. 
+// Write a function that takes an integer and returns it with its digit reversed. Handle
+// edge cases like negative numbers and numbers ending in zero. Log the reversed
+// integers for a few test cases.
+
+const takeInteger = (integer) => {
+    let reverseConverted = parseInt(integer.toString().split("").reverse().join("") , 10);
+  
+    if(integer < 0){
+      return reverseConverted * -1
+    }
+    return reverseConverted
+  }
+  
+  console.log(takeInteger("-327"));
