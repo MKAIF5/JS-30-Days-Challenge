@@ -67,3 +67,4 @@ const takePlandrome = (x) => {
     return false
 }
 console.log(takePlandrome(1246541));
+
