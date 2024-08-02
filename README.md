@@ -58,3 +58,6 @@ Postponed
 
 Day 20 : LocalStorage and SessionStorage
 COMPLETED ✔
+
+Day 21 : LeetCode Easy 
+COMPLETED ✔
