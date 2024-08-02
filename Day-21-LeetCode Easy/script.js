@@ -33,14 +33,37 @@ console.log(takeArray([4, 6, 47, 45], 9));
 // Write a function that takes an integer and returns it with its digit reversed. Handle
 // edge cases like negative numbers and numbers ending in zero. Log the reversed
 // integers for a few test cases.
-
 const takeInteger = (integer) => {
-    let reverseConverted = parseInt(integer.toString().split("").reverse().join("") , 10);
-  
-    if(integer < 0){
-      return reverseConverted * -1
+    let reverseConverted = parseInt(integer.toString().split("").reverse().join(""), 10);
+
+    if (integer < 0) {
+        return reverseConverted * -1
     }
     return reverseConverted
-  }
-  
-  console.log(takeInteger("-327"));
+}
+
+console.log(takeInteger("-327"));
+
+// Activity 3: Palindrome Number
+
+// Task 3: Solve the "Palindrome Number" problem on leetCode. 
+// Write a function that takes an integer and returns true if it is a palindrome, and
+// false otherwise. Log the result for a few test cases, including edge cases like 
+// negative numbers.
+const takePlandrome = (x) => {
+    if (x < 0) {
+        return false
+    }
+    let num = x;
+    let zeroNum = 0;
+    while (num > 0) {
+        let define = num % 10;
+        zeroNum = zeroNum * 10 + define;
+        num = Math.floor(num / 10)
+    }
+    if (zeroNum === x) {
+        return true
+    }
+    return false
+}
+console.log(takePlandrome(1246541));
