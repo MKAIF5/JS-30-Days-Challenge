@@ -141,3 +141,42 @@ printList(mergedList); // Output the merged list in a readable format
 // Write a function to take a string containing just the characters '(',')','{','}','[' 
 // and ']', and determines if the input string is valid.  A string is valid if open
 // brackets and closed in the correct order. Log the result for a few test cases.
+let isValid = function(s) {
+    // Initialize an empty array called stack to keep track of opening brackets
+    const stack = [];
+    
+    // Loop through each character in the string 's'
+    for(let i = 0; i < s.length; i++){
+        // Get the current character
+        const char = s[i];
+
+        // If the character is an opening bracket, push it onto the stack
+        if(char === '(' || char === '[' || char === '{'){
+            stack.push(char);
+        // If the character is a closing bracket
+        } else if(char === ')' || char === ']' || char === '}'){
+            // If the stack is empty, there is no matching opening bracket
+            if(isEmpty(stack)){
+                return false;
+            }
+            // Pop the top element from the stack
+            const top = stack.pop();
+            // Check if the popped element matches the current closing bracket
+            if((char === ')' && top !== '(') ||
+               (char === ']' && top !== '[') ||
+               (char === '}' && top !== '{')
+            ){
+                return false;
+            }
+        }
+    }
+    // After processing all characters, check if the stack is empty
+    return isEmpty(stack);
+}
+
+// Helper function to check if the stack is empty
+function isEmpty(stack){
+    return stack.length === 0;
+}
+    console.log(isValid("()[]{}"));
+    
