@@ -78,7 +78,6 @@ printLinkedList(sum);
 // Write a function that takes a string and returns the length of the longest substring
 // without repeating characters. Log the length for a few test cases, including edge
 // cases.
-
 function logLength(s) {
   let n = s.length;
   let maxLength = 0;
@@ -95,3 +94,31 @@ function logLength(s) {
 }
 console.log(logLength("andbasfb"));
 console.log(logLength(" "));
+console.log(logLength("bbbbbbbbbb"));
+
+// Activity 3 : Container With Most Water
+
+// Task 3 : Solve the “Container With Most Water” problem on LeetCode.
+// Write a function that takes an array of non-negative integers where each integer
+// represents the height of a line drawn at each point. Find two lines that together
+// with the x-axis form a container, such that the container holds the most water.Log 
+// the maximum amount of water for a few test cases.*/
+function maxArea(height) {
+  let left = 0;
+  let right = height.length - 1;
+  let maxArea = 0;
+
+  while (left < right) {
+    const width = right - left;
+    const currentHeight = Math.min(height[left], height[right]);
+    const currentArea = width * currentHeight;
+    maxArea = Math.max(maxArea, currentArea);
+
+    if (height[left] < height[right]) {
+      left++;
+    } else {
+      right--;
+    }
+  }
+  return maxArea;
+}
