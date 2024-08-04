@@ -93,3 +93,31 @@ function mergeTwoLists(list1, list2) {
     // Return the merged list starting from the node after the dummy
     return dummy.next;
 };
+
+// Activity 3 : Trapping Rain Water
+
+// Task 3 : Solve the Trapping Rain Water" problem on LeetCode
+// Write a function that takes an array of non-negative integers representing an
+// elevation map where the width of each bar is 1, and computes how much water it can
+// trap after raining Log the amount of trapped water for a few test cases. 
+let trap = function(height) {
+    let left = 0;
+ let right = height.length - 1;
+ let lmax = height[left];
+ let rmax = height[right];
+ let ans = 0;
+
+ while (left < right) {
+     if (height[left] < height[right]) {
+         lmax = Math.max(lmax, height[left]);  // Update lmax
+         ans += lmax - height[left];           // Calculate trapped water at left position
+         left++;                               // Move the left pointer rightward
+     } else {
+         rmax = Math.max(rmax, height[right]); // Update rmax
+         ans += rmax - height[right];          // Calculate trapped water at right position
+         right--;                              // Move the right pointer leftward
+     }
+ }
+ return ans;
+};
+console.log(trap([0,1,0,2,1,0,1,3,2,1,2,1]));
