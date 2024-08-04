@@ -61,3 +61,6 @@ COMPLETED ✔
 
 Day 21 : LeetCode Easy 
 COMPLETED ✔
+
+Day 22 : LeetCode Medium 
+COMPLETED ✔
