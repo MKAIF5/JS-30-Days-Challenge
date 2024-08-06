@@ -67,3 +67,6 @@ COMPLETED ✔
 
 Day 23 : LeetCode Hard
 COMPLETED ✔
+
+Day 24 : Weather App
+COMPLETED ✔
