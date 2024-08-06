@@ -64,3 +64,6 @@ COMPLETED ✔
 
 Day 22 : LeetCode Medium 
 COMPLETED ✔
+
+Day 23 : LeetCode Hard
+COMPLETED ✔
