@@ -5,7 +5,7 @@
 // Task 1: Solve the Median of Two Sorted Arrays problem on LeetCode.
 // Write a function that takes two sorted arrays of integers and returns the median of
 // the two sorted arrays, Log the median for a few test cases, including edge cases.
-let findMedianSortedArrays = function(nums1, nums2) {
+let findMedianSortedArrays = function (nums1, nums2) {
     // Concatenate the two arrays into a single array `arr`
     let arr = nums1.concat(nums2);
     // Sort the combined array in ascending order
@@ -13,7 +13,7 @@ let findMedianSortedArrays = function(nums1, nums2) {
 
     // Get the length of the combined and sorted array
     let n = arr.length;
-    
+
     // Check if the length of the array is even
     if (n % 2 === 0) {
         // If even, calculate the median as the average of the two middle numbers
@@ -23,7 +23,7 @@ let findMedianSortedArrays = function(nums1, nums2) {
         return arr[Math.floor(n / 2)];
     }
 };
-console.log(findMedianSortedArrays([1,3], [2]));
+console.log(findMedianSortedArrays([1, 3], [2]));
 
 
 // Activity 2 : Merge k Sorted Lists
@@ -32,7 +32,7 @@ console.log(findMedianSortedArrays([1,3], [2]));
 // Write a function that takes an array of k linked lists, each linked list is sorted in ascending order, and merges all the Linked lists into one sorted linked list.
 // Create a few test cases with linked lists and log the merged list.
 
-const mergeKLists = function(lists) {
+const mergeKLists = function (lists) {
     if (lists.length === 0) {
         return null;
     }
@@ -100,24 +100,69 @@ function mergeTwoLists(list1, list2) {
 // Write a function that takes an array of non-negative integers representing an
 // elevation map where the width of each bar is 1, and computes how much water it can
 // trap after raining Log the amount of trapped water for a few test cases. 
-let trap = function(height) {
+let trap = function (height) {
     let left = 0;
- let right = height.length - 1;
- let lmax = height[left];
- let rmax = height[right];
- let ans = 0;
+    let right = height.length - 1;
+    let lmax = height[left];
+    let rmax = height[right];
+    let ans = 0;
 
- while (left < right) {
-     if (height[left] < height[right]) {
-         lmax = Math.max(lmax, height[left]);  // Update lmax
-         ans += lmax - height[left];           // Calculate trapped water at left position
-         left++;                               // Move the left pointer rightward
-     } else {
-         rmax = Math.max(rmax, height[right]); // Update rmax
-         ans += rmax - height[right];          // Calculate trapped water at right position
-         right--;                              // Move the right pointer leftward
-     }
- }
- return ans;
+    while (left < right) {
+        if (height[left] < height[right]) {
+            lmax = Math.max(lmax, height[left]);  // Update lmax
+            ans += lmax - height[left];           // Calculate trapped water at left position
+            left++;                               // Move the left pointer rightward
+        } else {
+            rmax = Math.max(rmax, height[right]); // Update rmax
+            ans += rmax - height[right];          // Calculate trapped water at right position
+            right--;                              // Move the right pointer leftward
+        }
+    }
+    return ans;
 };
-console.log(trap([0,1,0,2,1,0,1,3,2,1,2,1]));
+console.log(trap([0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1]));
+
+// Activity 4 : N-Queens
+
+// Task 4 : Solve The "n-Queens" Problem In LeetCode. 
+// Write a function that places n queens on nxn chessboard such that no two queens atack
+// each other, and return all district solutions to the n-queens puzzle.
+// Log the district solution for a few test cases
+const solveNQueens = function (n) {
+    const result = [];
+    const board = Array(n).fill().map(() => Array(n).fill("."));
+
+    const isValid = (row, columns) => {
+        for (let i = 0; i < row; i++) {
+            if (board[i][columns] === "Q") {
+                return false
+            };
+            if (columns - (row - i) >= 0 && board[i][columns - (row - i)] === "Q") {
+                return false
+            }
+            if (columns + (row - i) < n && board[i][columns + (row - i)] === 'Q') {
+
+                return false;
+            }
+        }
+        return true;
+    };
+
+
+    const solve = (row) => {
+       if(row === n){
+        result.push(board.map(row => row.join('')));
+        return;
+       }
+
+       for(let columns  = 0; columns < n; columns++){
+        if(isValid(row , columns)){
+           board[row][columns] = "Q"
+          solve(row + 1);
+          board[row][columns] = "."
+        }
+       }
+    }
+    solve(0)
+    return result
+};
