@@ -60,3 +60,5 @@ const searchWeather = async () => {
     console.log("error you are valid city name");
   }
 };
+
+// Task Completed
