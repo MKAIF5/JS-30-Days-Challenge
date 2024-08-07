@@ -68,5 +68,8 @@ COMPLETED ✔
 Day 23 : LeetCode Hard
 COMPLETED ✔
 
-Day 24 : Weather App
+Day 24 : Weather App Project
+COMPLETED ✔
+
+Day 25 : Movie Search App Project
 COMPLETED ✔
