@@ -73,3 +73,6 @@ COMPLETED ✔
 
 Day 25 : Movie Search App Project
 COMPLETED ✔
+
+Day 26 : Chat Application Project
+COMPLETED ✔
