@@ -79,3 +79,6 @@ COMPLETED ✔
 
 Day 27 : Task Managment App Project
 // Postponed 10 Aug ke baad
+
+Day 28 : Ecommerce Website Project
+COMPLETED ✔
