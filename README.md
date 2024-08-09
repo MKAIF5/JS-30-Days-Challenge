@@ -76,3 +76,6 @@ COMPLETED ✔
 
 Day 26 : Chat Application Project
 COMPLETED ✔
+
+Day 27 : Task Managment App Project
+// Postponed 10 Aug ke baad
